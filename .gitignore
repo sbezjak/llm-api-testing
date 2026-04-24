@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+.coverage
+/htmlcov/
+
+# Virtualenv
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+.claude/
+
+# OS
+.DS_Store
+
+# Local-only working files (not for GitHub)
+drafts/
+
+# Note: reports/ is intentionally NOT ignored — committed HTML reports
+# let visitors preview test output without running the suite.

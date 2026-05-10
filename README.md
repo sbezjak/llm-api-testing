@@ -6,8 +6,6 @@ non-deterministic system without relying on a live model.
 
 **Live reports:** [test report](https://sbezjak.github.io/llm-api-testing/reports/report.html) · [coverage](https://sbezjak.github.io/llm-api-testing/reports/htmlcov/index.html)
 
-> Built as project 1 of 5 exploring AI/LLM testing. A writeup is in progress.
-
 ## What it teaches
 
 - Testing a **non-deterministic** system with threshold assertions instead of

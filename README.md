@@ -90,6 +90,22 @@ Then visit:
 - http://localhost:8000/docs - interactive Swagger UI (try `/ask` from the browser)
 - http://localhost:8000/redoc - alternative API docs
 
+### Hardened mode (red-team target for project 3)
+
+Set `HARDENED=1` to layer three minimal, deliberately-imperfect defenses on top
+of the as-is app: an input filter with normalization (L1), a system prompt
+carrying a secret canary (L2), and a rule-based output filter (L3). Off by
+default, so plain behaviour is unchanged. The red-team suite
+(https://github.com/sbezjak/llm-red) expects it on `:8001` while the plain
+target stays on `:8000`, so both can run side by side:
+
+```bash
+HARDENED=1 uvicorn app.main:app --port 8001
+```
+
+The canary defaults to `CANARY-7f3a9c2e1b8d`; override both repos in lockstep
+with `LLMRED_CANARY` so the planted secret and the leak detector can't drift.
+
 ## Test markers
 
 | Marker | Runtime | Meaning |

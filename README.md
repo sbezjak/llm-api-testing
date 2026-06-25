@@ -1,6 +1,6 @@
 # llm-api-testing
 
-> Part of a [5-project AI/QA testing portfolio](https://github.com/sbezjak) - all projects + write-ups.
+> Part of a [5-project AI/QA testing portfolio](https://github.com/sbezjak/sbezjak) - all projects and write-ups.
 
 A FastAPI service that proxies questions to a local LLM (Ollama), paired with a
 pytest suite (23 tests, 100% coverage) that demonstrates how to test a

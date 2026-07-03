@@ -92,6 +92,10 @@ Then visit:
 
 ### Hardened mode (red-team target for project 3)
 
+This flag exists only as a punching bag: a sibling project,
+[llm-red](https://github.com/sbezjak/llm-red), attacks this API and needs a
+version with guardrails to show that defenses reduce but don't eliminate bypasses.
+
 Set `HARDENED=1` to layer three minimal, deliberately-imperfect defenses on top
 of the as-is app: an input filter with normalization (L1), a system prompt
 carrying a secret canary (L2), and a rule-based output filter (L3). Off by
